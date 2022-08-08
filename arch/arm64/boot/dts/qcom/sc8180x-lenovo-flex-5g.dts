@@ -236,6 +236,8 @@
 		reg = <0x10>;
 		hid-descr-addr = <0x1>;
 
+		wakeup-source;
+
 		interrupts-extended = <&tlmm 122 IRQ_TYPE_LEVEL_LOW>;
 	};
 };
@@ -252,6 +254,8 @@
 		reg = <0x5>;
 		hid-descr-addr = <0x20>;
 
+		wakeup-source;
+
 		interrupts-extended = <&tlmm 37 IRQ_TYPE_LEVEL_LOW>;
 	};
 
@@ -259,6 +263,8 @@
 		compatible = "hid-over-i2c";
 		reg = <0x2c>;
 		hid-descr-addr = <0x20>;
+
+		wakeup-source;
 
 		interrupts-extended = <&tlmm 24 IRQ_TYPE_LEVEL_LOW>;
 	};
